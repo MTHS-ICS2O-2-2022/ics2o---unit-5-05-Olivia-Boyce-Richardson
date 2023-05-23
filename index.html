@@ -1,75 +1,112 @@
 <!DOCTYPE html>
 <!-- ICS2O-Unit5-05-->
 <html lang="en-ca">
-<head>
-  <meta charset="utf-8" />
-  <meta name="description" content="Triangle type generator" />
-  <meta name="keywords" content="every, triangle" />
-  <meta name="author" content="Olivia B-R" />
-  <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <!-- Note the addition for the selection component-->
-  <link rel="stylesheet" href="./css/getmdl-select.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.purple-deep_purple.min.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.jpg" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.jpg" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.jpg" />
-  <link rel="manifest" href="./site.webmanifest" />
-  <title>Most Triangles </title>
-</head>
-<body>
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <script src="./js/script.js"></script>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Triangle type generator</span>
-      </div>
-    </header>
-    <main class="mdl-layout__content">
-      <br />
-      <img src="triangle.png" alt="style">
-      <p> Please enter the three angles of a triangle</p>
-      <!-- Numeric Textfield -->
-      <form action="#">
-        <p>Angle A</p>
-        <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length-a"
-            aria-label="length a" />
-          <span class="mdl-textfield__error">Input is not a number!</span>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Triangle type generator" />
+    <meta name="keywords" content="every, triangle" />
+    <meta name="author" content="Olivia B-R" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Note the addition for the selection component-->
+    <link rel="stylesheet" href="./css/getmdl-select.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.purple-deep_purple.min.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.jpg"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <title>Most Triangles</title>
+  </head>
+  <body>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Triangle type generator</span>
         </div>
-        °
-      </form>
-      <!-- Numeric Textfield -->
-      <form action="#">
-        <p>Angle B</p>
-        <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length-b"
-            aria-label="length b" />
-          <span class="mdl-textfield__error">Input is not a number!</span>
-        </div>
-        °
-      </form>
-      <!-- Numeric Textfield -->
-      <form action="#">
-        <p>Angle C</p>
-        <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length-c"
-            aria-label="length c" />
-          <span class="mdl-textfield__error">Input is not a number!</span>
-        </div>
-        °
-      </form>
-      <!-- Raised button with ripple -->
-      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-        onclick="myButtonClicked()">
-        Calculate
-      </button>
-      <br />
-      <br />
-      <div id="answer"></div>
-    </main>
-  </div>
-</body>
+      </header>
+      <main class="mdl-layout__content">
+        <br />
+        <img src="triangle.png" alt="style" />
+        <p>Please enter the three angles of a triangle</p>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <p>Angle A</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="length-a"
+              aria-label="length a"
+            />
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          °
+        </form>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <p>Angle B</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="length-b"
+              aria-label="length b"
+            />
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          °
+        </form>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <p>Angle C</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="length-c"
+              aria-label="length c"
+            />
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          °
+        </form>
+        <!-- Raised button with ripple -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="myButtonClicked()"
+        >
+          Calculate
+        </button>
+        <br />
+        <br />
+        <div id="answer"></div>
+      </main>
+    </div>
+  </body>
 </html>
